@@ -5,6 +5,7 @@ public abstract class AnimalTerrestre extends Animal {
 
     public AnimalTerrestre(int qtdDePatas, String nome, String habitoAlimentar, String agrupamento, double peso, double altura) {
         super(nome, habitoAlimentar, agrupamento, peso, altura);
+        this.qtdDePatas = qtdDePatas;
     }
 
     @Override

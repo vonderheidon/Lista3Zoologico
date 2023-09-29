@@ -5,12 +5,13 @@ public abstract class AnimalAereo extends Animal {
 
     public AnimalAereo(double envergaduraDaAsa, String nome, String habitoAlimentar, String agrupamento, double peso, double altura) {
         super(nome, habitoAlimentar, agrupamento, peso, altura);
+        this.envergaduraDaAsa = envergaduraDaAsa;
     }
 
     @Override
     public void exibirInfo() {
         super.exibirInfo();
-        System.out.printf("Envergadura da asa: %fcm", this.envergaduraDaAsa);
+        System.out.printf("Envergadura da asa: %f cm", this.envergaduraDaAsa);
     }
     @Override
     public void locomover() {

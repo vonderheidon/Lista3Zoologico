@@ -19,8 +19,8 @@ public abstract class Animal {
         System.out.println("Nome: " + this.nome);
         System.out.println("Habito alimentar: " + this.habitoAlimentar);
         System.out.println("Classe animal: " + this.agrupamento);
-        System.out.printf("Peso: %.2fKg", this.peso);
-        System.out.printf("\nAltura: %.2fcm", this.altura);
+        System.out.printf("Peso: %.2f Kg", this.peso);
+        System.out.printf("\nAltura: %.2f cm", this.altura);
     }
     public void locomover() {
         System.out.printf("%s esta se locomovendo.", this.nome);

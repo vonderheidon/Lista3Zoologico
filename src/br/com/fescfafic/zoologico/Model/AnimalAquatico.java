@@ -5,12 +5,19 @@ public abstract class AnimalAquatico extends Animal {
 
     public AnimalAquatico(boolean respiraEmbaixoDagua, String nome, String habitoAlimentar, String agrupamento, double peso, double altura) {
         super(nome, habitoAlimentar, agrupamento, peso, altura);
+        this.respiraEmbaixoDagua = respiraEmbaixoDagua;
     }
 
     @Override
     public void exibirInfo() {
+        String respira;
         super.exibirInfo();
-        System.out.print("\nRespira embaixo dagua? " + (this.respiraEmbaixoDagua ? "Nao" : "Sim"));
+        if (this.respiraEmbaixoDagua == true) {
+            respira = "Sim";
+        } else {
+            respira = "Nao";
+        }
+        System.out.print("\nRespira embaixo dagua? " + respira);
     }
     @Override
     public void locomover() {
