@@ -16,13 +16,19 @@ public abstract class Animal {
     }
 
     public void exibirInfo() {
-        System.out.println("\nNome: " + this.nome);
+        System.out.println("Nome: " + this.nome);
         System.out.println("Habito alimentar: " + this.habitoAlimentar);
         System.out.println("Classe animal: " + this.agrupamento);
-        System.out.printf("Peso: %fKg\n", this.peso);
-        System.out.printf("Altura: %fcm", this.altura);
+        System.out.printf("Peso: %.2fKg", this.peso);
+        System.out.printf("\nAltura: %.2fcm", this.altura);
     }
     public void locomover() {
-        System.out.printf("\n%s esta se locomovendo.", this.nome);
+        System.out.printf("%s esta se locomovendo.", this.nome);
+    }
+    public void comer() {
+        System.out.printf("%s esta comendo.", this.nome);
+    }
+    public void interagir() {
+        System.out.printf("%s esta interagindo.", this.nome);
     }
 }
