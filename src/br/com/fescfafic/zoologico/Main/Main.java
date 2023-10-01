@@ -15,7 +15,7 @@ public class Main {
                 60
         );
         Tartaruga tartaruga = new Tartaruga(
-                true,
+                false,
                 "Tartaruga Silvestre",
                 "Onivoro",
                 "Repteis",
@@ -71,5 +71,7 @@ public class Main {
         );
         zoologico.adicionarAmbiente(ambienteTerrestre1);
         zoologico.adicionarAmbiente(ambienteAereo1);
+        ambienteAquatico1.adicionarAnimal(tartaruga);
+        tartaruga.exibirInfo();
     }
 }

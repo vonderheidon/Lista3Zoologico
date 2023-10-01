@@ -10,14 +10,8 @@ public abstract class AnimalAquatico extends Animal {
 
     @Override
     public void exibirInfo() {
-        String respira;
         super.exibirInfo();
-        if (this.respiraEmbaixoDagua == true) {
-            respira = "Sim";
-        } else {
-            respira = "Nao";
-        }
-        System.out.print("\nRespira embaixo dagua? " + respira);
+        System.out.print("\nRespira embaixo dagua? " + (this.respiraEmbaixoDagua ? "Sim" : "Nao"));
     }
     @Override
     public void locomover() {
