@@ -2,6 +2,8 @@ package br.com.fescfafic.zoologico.Main;
 
 import br.com.fescfafic.zoologico.Model.*;
 
+import java.time.LocalTime;
+
 public class Main {
     public static void main(String[] args) {
         Tucano tucano = new Tucano(
@@ -58,7 +60,17 @@ public class Main {
                 2,
                 4
         );
-        ambienteTerrestre1.adicionarAnimal(leopardo);
-        ambienteTerrestre1.exibirInfo();
+        Zoologico zoologico = new Zoologico(
+                "Santa Luzia",
+                "Rua das flores, nº 200",
+                LocalTime.of(7,0),
+                LocalTime.of(18,0),
+                150,
+                3,
+                2
+        );
+        zoologico.adicionarAmbiente(ambienteTerrestre1);
+        zoologico.adicionarAmbiente(ambienteAereo1);
+        zoologico.exibirInfo();
     }
 }

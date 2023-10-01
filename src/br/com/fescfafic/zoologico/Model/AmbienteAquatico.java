@@ -28,9 +28,9 @@ public class AmbienteAquatico extends Ambiente {
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalAquatico animalAquatico) {
-        for (int i = 0; i < listaAnimaisAquaticos.length; i++) {
-            if (listaAnimaisAquaticos[i] == null) {
-                listaAnimaisAquaticos[i] = animalAquatico;
+        for (int i = 0; i < this.listaAnimaisAquaticos.length; i++) {
+            if (this.listaAnimaisAquaticos[i] == null) {
+                this.listaAnimaisAquaticos[i] = animalAquatico;
                 return;
             }
         }
@@ -39,9 +39,9 @@ public class AmbienteAquatico extends Ambiente {
     public void listarAnimais() {
         boolean existe = false;
         System.out.print("Animais residentes: ");
-        for (int i = 0; i < listaAnimaisAquaticos.length; i++) {
-            if (listaAnimaisAquaticos[i] != null) {
-                System.out.printf("\n - %s", listaAnimaisAquaticos[i].nome);
+        for (int i = 0; i < this.listaAnimaisAquaticos.length; i++) {
+            if (this.listaAnimaisAquaticos[i] != null) {
+                System.out.printf("\n - %s", this.listaAnimaisAquaticos[i].nome);
                 existe = true;
             }
         }

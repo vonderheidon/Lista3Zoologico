@@ -28,9 +28,9 @@ public class AmbienteTerrestre extends Ambiente {
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalTerrestre animalTerrestre) {
-        for (int i = 0; i < listaAnimaisTerrestres.length; i++) {
-            if (listaAnimaisTerrestres[i] == null) {
-                listaAnimaisTerrestres[i] = animalTerrestre;
+        for (int i = 0; i < this.listaAnimaisTerrestres.length; i++) {
+            if (this.listaAnimaisTerrestres[i] == null) {
+                this.listaAnimaisTerrestres[i] = animalTerrestre;
                 return;
             }
         }
@@ -39,9 +39,9 @@ public class AmbienteTerrestre extends Ambiente {
     public void listarAnimais() {
         boolean existe = false;
         System.out.print("Animais residentes: ");
-        for (int i = 0; i < listaAnimaisTerrestres.length; i++) {
-            if (listaAnimaisTerrestres[i] != null) {
-                System.out.printf("\n - %s", listaAnimaisTerrestres[i].nome);
+        for (int i = 0; i < this.listaAnimaisTerrestres.length; i++) {
+            if (this.listaAnimaisTerrestres[i] != null) {
+                System.out.printf("\n - %s", this.listaAnimaisTerrestres[i].nome);
                 existe = true;
             }
         }

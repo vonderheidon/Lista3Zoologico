@@ -29,9 +29,9 @@ public class AmbienteAereo extends Ambiente{
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalAereo animalAereo) {
-        for (int i = 0; i < listaAnimaisAereos.length; i++) {
-            if (listaAnimaisAereos[i] == null) {
-                listaAnimaisAereos[i] = animalAereo;
+        for (int i = 0; i < this.listaAnimaisAereos.length; i++) {
+            if (this.listaAnimaisAereos[i] == null) {
+                this.listaAnimaisAereos[i] = animalAereo;
                 return;
             }
         }
@@ -40,9 +40,9 @@ public class AmbienteAereo extends Ambiente{
     public void listarAnimais() {
         boolean existe = false;
         System.out.print("Animais residentes: ");
-        for (int i = 0; i < listaAnimaisAereos.length; i++) {
-            if (listaAnimaisAereos[i] != null) {
-                System.out.printf("\n - %s", listaAnimaisAereos[i].nome);
+        for (int i = 0; i < this.listaAnimaisAereos.length; i++) {
+            if (this.listaAnimaisAereos[i] != null) {
+                System.out.printf("\n - %s", this.listaAnimaisAereos[i].nome);
                 existe = true;
             }
         }
