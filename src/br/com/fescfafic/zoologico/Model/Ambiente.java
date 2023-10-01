@@ -8,4 +8,7 @@ public abstract class Ambiente {
         this.nome = nome;
         this.medidaAreaMetros = medidaAreaMetros;
     }
+    public void listarAnimais() {
+        System.out.print("\nListando animais.");
+    }
 }

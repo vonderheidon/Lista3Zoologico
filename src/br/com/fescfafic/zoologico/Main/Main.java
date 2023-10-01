@@ -71,6 +71,5 @@ public class Main {
         );
         zoologico.adicionarAmbiente(ambienteTerrestre1);
         zoologico.adicionarAmbiente(ambienteAereo1);
-        zoologico.exibirInfo();
     }
 }

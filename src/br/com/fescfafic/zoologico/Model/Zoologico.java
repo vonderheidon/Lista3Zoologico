@@ -1,6 +1,7 @@
 package br.com.fescfafic.zoologico.Model;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Zoologico {
     public String nome;
@@ -10,6 +11,7 @@ public class Zoologico {
     public double precoIngresso;
     public int qtdRestaurantes;
     public Ambiente[] listaAmbientes;
+    public int qtdVisitantes;
 
     public Zoologico(String nome, String endereco, LocalTime horarioAbertura,
                      LocalTime horarioFechamento, double precoIngresso,
@@ -21,6 +23,7 @@ public class Zoologico {
         this.precoIngresso = precoIngresso;
         this.qtdRestaurantes = qtdRestaurantes;
         this.listaAmbientes = new Ambiente[qtdAmbientes];
+        this.qtdVisitantes = 0;
     }
 
     public void exibirInfo() {
@@ -52,6 +55,37 @@ public class Zoologico {
         }
         if (existe == false) {
             System.out.print("nenhum ambiente esta liberado ainda.");
+        }
+    }
+    public void verificarFuncionamento() {
+        System.out.print("\nAgora sao " + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm")));
+        if (LocalTime.now().isAfter(horarioAbertura) && LocalTime.now().isBefore(horarioFechamento)) {
+            System.out.print(" e o zoologico esta funcionando.");
+        } else {
+            System.out.print(" e o zoologico esta fechado.");
+        }
+    }
+    public void registrarVisitante(String nome) {
+        this.qtdVisitantes++;
+        System.out.printf("\nVisitante %s foi registrado.", nome);
+    }
+    public void calcularReceita() {
+        double receita = qtdVisitantes * precoIngresso;
+        if (receita > 0) {
+            System.out.printf("\nO total de receita gerada sem descontos eh de R$ %.2f", receita);
+        } else {
+            System.out.print("\nAinda nao teve nenhum visitante.");
+        }
+    }
+    public void listarAnimaisPorAmbiente(Ambiente ambiente) {
+        for (int i = 0; i < this.listaAmbientes.length; i++) {
+            if (this.listaAmbientes[i] != null) {
+                if (this.listaAmbientes[i].nome.equalsIgnoreCase(ambiente.nome)) {
+                    System.out.printf("\nAmbiente %s e seus ", this.listaAmbientes[i].nome);
+                    this.listaAmbientes[i].listarAnimais();
+                    return;
+                }
+            }
         }
     }
 }
