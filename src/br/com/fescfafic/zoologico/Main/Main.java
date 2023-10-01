@@ -1,20 +1,27 @@
 package br.com.fescfafic.zoologico.Main;
 
-import br.com.fescfafic.zoologico.Model.Animal;
-import br.com.fescfafic.zoologico.Model.AnimalAereo;
-import br.com.fescfafic.zoologico.Model.Tartaruga;
-import br.com.fescfafic.zoologico.Model.Tubarao;
+import br.com.fescfafic.zoologico.Model.*;
 
 public class Main {
     public static void main(String[] args) {
-        Tubarao tubarao = new Tubarao(
-                true,
-                "Tubarao Martelo",
+        Tucano tucano = new Tucano(
+                40,
+                "Tucano Azul",
                 "Carnivoro",
-                "Peixes",
-                200,
-                600
+                "Aves",
+                2,
+                60
         );
-        tubarao.exibirInfo();
+        AmbienteAereo ambienteAereo1 = new AmbienteAereo(
+                "Tucanos",
+                30,
+                true,
+                false,
+                12,
+                2,
+                16,
+                8
+        );
+        ambienteAereo1.exibirInfo();
     }
 }
