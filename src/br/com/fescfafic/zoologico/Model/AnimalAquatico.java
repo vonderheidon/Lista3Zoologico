@@ -15,7 +15,7 @@ public abstract class AnimalAquatico extends Animal {
     }
     @Override
     public void locomover() {
-        System.out.printf("%s esta nadando.", this.nome);
+        System.out.printf("\n%s esta nadando.", this.nome);
     }
     @Override
     public void comer() {

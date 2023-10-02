@@ -24,7 +24,7 @@ public class AmbienteAquatico extends Ambiente {
         System.out.printf("Possui respiradores? %s\n", this.possuiRespiradores ? "Sim" : "Nao");
         System.out.printf("Profundidade maxima: %dm\n", this.profundidadeMaxMetros);
         System.out.printf("Quantidade de aquarios: %d\n", this.qtdAquarios);
-        System.out.printf("Quantidade de filtros: %d\n", this.qtdFiltros);
+        System.out.printf("Quantidade de filtros: %d", this.qtdFiltros);
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalAquatico animalAquatico) {
@@ -39,7 +39,7 @@ public class AmbienteAquatico extends Ambiente {
     @Override
     public void listarAnimais() {
         boolean existe = false;
-        System.out.print("Animais residentes: ");
+        System.out.print("\nAnimais residentes: ");
         for (int i = 0; i < this.listaAnimaisAquaticos.length; i++) {
             if (this.listaAnimaisAquaticos[i] != null) {
                 System.out.printf("\n - %s", this.listaAnimaisAquaticos[i].nome);

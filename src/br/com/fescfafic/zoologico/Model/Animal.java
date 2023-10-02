@@ -23,12 +23,12 @@ public abstract class Animal {
         System.out.printf("\nComprimento: %d cm", this.comprimentoCm);
     }
     public void locomover() {
-        System.out.printf("%s esta se locomovendo.", this.nome);
+        System.out.printf("\n%s esta se locomovendo.", this.nome);
     }
     public void comer() {
-        System.out.printf("%s esta comendo.", this.nome);
+        System.out.printf("\n%s esta comendo.", this.nome);
     }
     public void interagir() {
-        System.out.printf("%s esta interagindo.", this.nome);
+        System.out.printf("\n%s esta interagindo.", this.nome);
     }
 }

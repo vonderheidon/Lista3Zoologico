@@ -69,9 +69,23 @@ public class Main {
                 3,
                 2
         );
-        zoologico.adicionarAmbiente(ambienteTerrestre1);
+        System.out.printf("- Metodos animais");
+        tucano.exibirInfo();
+        tucano.locomover();
+        leopardo.locomover();
+        tartaruga.comer();
+        System.out.printf("\n-----------------------\n");
+        System.out.printf("- Metodos ambientes");
+        ambienteAereo1.adicionarAnimal(tucano);
+        ambienteAereo1.exibirInfo();
+        System.out.printf("\n-----------------------\n");
+        System.out.printf("- Metodos zoologico");
         zoologico.adicionarAmbiente(ambienteAereo1);
-        ambienteAquatico1.adicionarAnimal(tartaruga);
-        tartaruga.exibirInfo();
+        zoologico.exibirInfo();
+        zoologico.verificarFuncionamento();
+        zoologico.registrarVisitante("Marcio");
+        zoologico.calcularReceita();
+        zoologico.listarAnimaisPorAmbiente(ambienteAereo1);
+        zoologico.listarAnimaisPorAmbiente(ambienteAquatico1);
     }
 }

@@ -25,7 +25,7 @@ public class AmbienteAereo extends Ambiente{
         System.out.printf("Possui iluminacao artificial? %s\n", this.possuiIluminacaoArtificial ? "Sim" : "Nao");
         System.out.printf("Altura maxima: %dm\n", this.alturaMaxMetros);
         System.out.printf("Quantidade de lagos: %d\n", this.qtdLagos);
-        System.out.printf("Quantidade de arvores: %d\n", this.qtdArvores);
+        System.out.printf("Quantidade de arvores: %d", this.qtdArvores);
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalAereo animalAereo) {
@@ -40,7 +40,7 @@ public class AmbienteAereo extends Ambiente{
     @Override
     public void listarAnimais() {
         boolean existe = false;
-        System.out.print("Animais residentes: ");
+        System.out.print("\nAnimais residentes: ");
         for (int i = 0; i < this.listaAnimaisAereos.length; i++) {
             if (this.listaAnimaisAereos[i] != null) {
                 System.out.printf("\n - %s", this.listaAnimaisAereos[i].nome);

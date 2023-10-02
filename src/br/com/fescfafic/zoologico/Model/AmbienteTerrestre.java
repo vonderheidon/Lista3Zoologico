@@ -24,7 +24,7 @@ public class AmbienteTerrestre extends Ambiente {
         System.out.printf("Possui escalador? %s\n", this.possuiEscalador ? "Sim" : "Nao");
         System.out.printf("Tipo de terreno: %s\n", this.tipoDeTerreno);
         System.out.printf("Quantidade de arbustos: %d\n", this.qtdArbustos);
-        System.out.printf("Quantidade de bebedouros: %d\n", this.qtdBebedouros);
+        System.out.printf("Quantidade de bebedouros: %d", this.qtdBebedouros);
         this.listarAnimais();
     }
     public void adicionarAnimal(AnimalTerrestre animalTerrestre) {
@@ -39,7 +39,7 @@ public class AmbienteTerrestre extends Ambiente {
     @Override
     public void listarAnimais() {
         boolean existe = false;
-        System.out.print("Animais residentes: ");
+        System.out.print("\nAnimais residentes: ");
         for (int i = 0; i < this.listaAnimaisTerrestres.length; i++) {
             if (this.listaAnimaisTerrestres[i] != null) {
                 System.out.printf("\n - %s", this.listaAnimaisTerrestres[i].nome);

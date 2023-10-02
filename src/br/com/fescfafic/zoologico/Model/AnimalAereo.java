@@ -11,11 +11,11 @@ public abstract class AnimalAereo extends Animal {
     @Override
     public void exibirInfo() {
         super.exibirInfo();
-        System.out.printf("Envergadura da asa: %f cm", this.envergaduraDaAsa);
+        System.out.printf("\nEnvergadura da asa: %f cm", this.envergaduraDaAsa);
     }
     @Override
     public void locomover() {
-        System.out.printf("%s esta voando.", this.nome);
+        System.out.printf("\n%s esta voando.", this.nome);
     }
     @Override
     public void comer() {

@@ -31,7 +31,7 @@ public class Zoologico {
         System.out.printf("Endereco: %s\n", this.endereco);
         System.out.printf("Horario de abertura: %s\n", this.horarioAbertura.toString());
         System.out.printf("Horario de fechamento: %s\n", this.horarioFechamento.toString());
-        System.out.printf("Preco do ingresso: R$ %.2f\n", this.precoIngresso);
+        System.out.printf("Preco do ingresso: R$ %.2f", this.precoIngresso);
         this.listarAmbientes();
     }
     public void adicionarAmbiente(Ambiente ambiente) {
@@ -46,7 +46,7 @@ public class Zoologico {
     }
     public void listarAmbientes() {
         boolean existe = false;
-        System.out.print("Ambientes disponiveis: ");
+        System.out.print("\nAmbientes disponiveis: ");
         for (int i = 0; i < this.listaAmbientes.length; i++) {
             if (this.listaAmbientes[i] != null) {
                 System.out.printf("\n - %s", this.listaAmbientes[i].nome);
@@ -87,5 +87,6 @@ public class Zoologico {
                 }
             }
         }
+        System.out.printf("\nEste ambiente ainda nao esta liberado.");
     }
 }
