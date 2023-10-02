@@ -87,5 +87,6 @@ public class Main {
         zoologico.calcularReceita();
         zoologico.listarAnimaisPorAmbiente(ambienteAereo1);
         zoologico.listarAnimaisPorAmbiente(ambienteAquatico1);
+        tucano.comer();
     }
 }

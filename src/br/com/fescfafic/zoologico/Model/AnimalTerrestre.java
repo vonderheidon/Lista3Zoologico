@@ -19,11 +19,7 @@ public abstract class AnimalTerrestre extends Animal {
         System.out.printf("\n%s esta andando.", this.nome);
     }
     @Override
-    public void comer() {
-        super.comer();
-    }
-    @Override
     public void interagir() {
-        super.interagir();
+        System.out.printf("\n%s esta espreguicando.", this.nome);
     }
 }

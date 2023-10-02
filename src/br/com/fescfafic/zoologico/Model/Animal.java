@@ -26,7 +26,15 @@ public abstract class Animal {
         System.out.printf("\n%s esta se locomovendo.", this.nome);
     }
     public void comer() {
-        System.out.printf("\n%s esta comendo.", this.nome);
+        if (this.habitoAlimentar.equalsIgnoreCase("Onivoro")) {
+            System.out.printf("\n%s esta comendo vegetais ou carne, tant faz.", this.nome);
+        } else if (this.habitoAlimentar.equalsIgnoreCase("Carnivoro")) {
+            System.out.printf("\n%s esta comendo outros bichos.", this.nome);
+        } else if (this.habitoAlimentar.equalsIgnoreCase("Herbivoro")) {
+            System.out.printf("\n%s esta comendo vegetais.", this.nome);
+        } else {
+            System.out.printf("\n%s esta comendo.", this.nome);
+        }
     }
     public void interagir() {
         System.out.printf("\n%s esta interagindo.", this.nome);

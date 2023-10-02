@@ -18,11 +18,7 @@ public abstract class AnimalAereo extends Animal {
         System.out.printf("\n%s esta voando.", this.nome);
     }
     @Override
-    public void comer() {
-        super.comer();
-    }
-    @Override
     public void interagir() {
-        super.interagir();
+        System.out.printf("\n%s esta bicando a grade para chamar atencao.", this.nome);
     }
 }

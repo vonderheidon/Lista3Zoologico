@@ -18,11 +18,7 @@ public abstract class AnimalAquatico extends Animal {
         System.out.printf("\n%s esta nadando.", this.nome);
     }
     @Override
-    public void comer() {
-        super.comer();
-    }
-    @Override
     public void interagir() {
-        super.interagir();
+        System.out.printf("\n%s esta fazendo bolhas, que lindinho s2.", this.nome);
     }
 }
