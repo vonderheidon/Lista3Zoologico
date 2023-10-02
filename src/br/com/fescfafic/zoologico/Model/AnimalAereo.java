@@ -3,8 +3,8 @@ package br.com.fescfafic.zoologico.Model;
 public abstract class AnimalAereo extends Animal {
     public double envergaduraDaAsa;
 
-    public AnimalAereo(double envergaduraDaAsa, String nome, String habitoAlimentar, String agrupamento, double peso, double altura) {
-        super(nome, habitoAlimentar, agrupamento, peso, altura);
+    public AnimalAereo(double envergaduraDaAsa, String nome, String habitoAlimentar, String agrupamento, double pesoKg, int comprimentoCm) {
+        super(nome, habitoAlimentar, agrupamento, pesoKg, comprimentoCm);
         this.envergaduraDaAsa = envergaduraDaAsa;
     }
 

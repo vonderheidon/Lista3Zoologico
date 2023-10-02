@@ -3,8 +3,8 @@ package br.com.fescfafic.zoologico.Model;
 public abstract class AnimalAquatico extends Animal {
     public boolean respiraEmbaixoDagua;
 
-    public AnimalAquatico(boolean respiraEmbaixoDagua, String nome, String habitoAlimentar, String agrupamento, double peso, double altura) {
-        super(nome, habitoAlimentar, agrupamento, peso, altura);
+    public AnimalAquatico(boolean respiraEmbaixoDagua, String nome, String habitoAlimentar, String agrupamento, double pesoKg, int comprimentoCm) {
+        super(nome, habitoAlimentar, agrupamento, pesoKg, comprimentoCm);
         this.respiraEmbaixoDagua = respiraEmbaixoDagua;
     }
 

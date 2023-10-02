@@ -8,30 +8,30 @@ public class Main {
     public static void main(String[] args) {
         Tucano tucano = new Tucano(
                 40,
-                "Tucano Azul",
-                "Carnivoro",
+                "Tucano-Toco",
+                "Onivoro",
                 "Aves",
-                2,
+                0.54,
                 60
         );
         Tartaruga tartaruga = new Tartaruga(
                 false,
-                "Tartaruga Silvestre",
+                "Tartaruga-Verde",
                 "Onivoro",
                 "Repteis",
-                300,
-                25
+                200,
+                164
         );
         Leopardo leopardo = new Leopardo(
                 4,
-                "Leopardo dente de lixa",
+                "Leopardo-Persa",
                 "Carnivoro",
                 "Mamiferos",
-                230,
-                140
+                89,
+                150
         );
         AmbienteAereo ambienteAereo1 = new AmbienteAereo(
-                "Tucanos",
+                "Tucanos Americanos",
                 30,
                 true,
                 false,
@@ -41,7 +41,7 @@ public class Main {
                 8
         );
         AmbienteAquatico ambienteAquatico1 = new AmbienteAquatico(
-                "Tartarugas",
+                "Tartarugas Marinhas",
                 50,
                 false,
                 false,
@@ -51,7 +51,7 @@ public class Main {
                 3
         );
         AmbienteTerrestre ambienteTerrestre1 = new AmbienteTerrestre(
-                "Leopardos",
+                "Leopardos Persas",
                 200,
                 true,
                 true,
@@ -61,7 +61,7 @@ public class Main {
                 4
         );
         Zoologico zoologico = new Zoologico(
-                "Santa Luzia",
+                "Animais Maneiros",
                 "Rua das flores, nº 200",
                 LocalTime.of(7,0),
                 LocalTime.of(18,0),
